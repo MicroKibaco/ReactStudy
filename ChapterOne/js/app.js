@@ -2,13 +2,45 @@
 
 const List = React.createClass({
 
+                                   getInitialState(){
+
+                                       return {
+
+                                           list: new Set(),
+                                           editList: new Set(),
+
+                                       }
+
+                                   },
+
+                                   add(){
+                                       this.state.editList.add({value: ''});
+                                       this.forceUpdate();
+                                   },
+// refresh view
                                    render(){
+                                       const listDOM = [];
+                                       const editListDOM = [];
+
+                                       for (let item of this.state.list) {
+
+                                           listDOM.push(<Item value={item.value}/>)
+
+                                       }
+                                       for (let item of this.state.editList) {
+
+                                           editListDOM.push(<ItemEditor value={item.value}/>)
+
+                                       }
+
                                        return ( <ul>
-                                           <button className="btn btn-default">Add</button>
-                                           <Item vaule="Name: ">My name is yangzy</Item>
-                                           <Item vaule="Age: ">I am 18</Item>
-                                           <Item vaule="Sex: ">girl</Item>
-                                           <ItemEditor value='yangzy'/>
+                                           <button onClick={this.add} className="btn btn-default">Add</button>
+                                           {/*<Item vaule="Name:  ">My name is yangzy</Item>
+                                            <Item vaule="Age: ">I am 18</Item>
+                                            <Item vaule="Sex: ">girl</Item>
+                                            <ItemEditor value='yangzy'/>*/}
+                                           {listDOM}
+                                           {editListDOM}
                                        </ul>);
 
                                    }
