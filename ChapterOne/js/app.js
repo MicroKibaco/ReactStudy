@@ -43,6 +43,7 @@ const List = React.createClass({
                                        for (let entry of this.state.list) {
 
                                            listDOM.push(<Item id={entry[0]}
+                                                              key={entry[0]}
                                                               onRemove={this._removeItem}
                                                               value={entry[1].value}/>);
 
@@ -52,6 +53,7 @@ const List = React.createClass({
                                            editListDOM.push(<ItemEditor
                                                onRemove={this._removeItemEditor}
                                                id={entry[0]}
+                                               key={entry[0]}
                                                value={entry[1].value}/>);
 
                                        }
@@ -107,6 +109,7 @@ const ItemEditor = React.createClass({
                                          render(){
                                              return (
                                                  <li className="list-group-item">
+                                                     {this.props.id}
                                                      <input className="item-edit"
                                                             onChange={this._changeHandle}
                                                             value={this.state.value}/>
