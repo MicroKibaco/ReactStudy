@@ -16,5 +16,6 @@
 - Edit and Removes the implementation of the Item function
 
 
-
+### Renderings
+<img src="./../docus/images/chapter-one.gif" width="375px" height="667px" />
 
