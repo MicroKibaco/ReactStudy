@@ -1,6 +1,6 @@
 > # Completely conquered ReactJS
 
-###### ChapterOne
+###### [ChapterOne](https://github.com/MicroKibaco/ReactStudy/tree/master/ChapterOne)
 - Configure the base runtime environment
 
     - [React official website](https://facebook.github.io/react/docs/hello-world.html)
@@ -14,5 +14,8 @@
 - Embed HTML in JavaScript
 
 - Divide multiple components
+
+- By Curing property data
+
 
 

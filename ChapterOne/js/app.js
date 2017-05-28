@@ -1,4 +1,3 @@
-
 // List as a whole
 
 const List = React.createClass({
@@ -6,8 +5,10 @@ const List = React.createClass({
                                    render(){
                                        return ( <ul>
                                            <button className="btn btn-default">Add</button>
-                                           <Item/>
-                                           <ItemEditor/>
+                                           <Item vaule="Name: ">My name is yangzy</Item>
+                                           <Item vaule="Age: ">I am 18</Item>
+                                           <Item vaule="Sex: ">girl</Item>
+                                           <ItemEditor value='yangzy'/>
                                        </ul>);
 
                                    }
@@ -20,7 +21,7 @@ const Item = React.createClass({
                                    render(){
                                        return (
                                            <li className="list-group-item">
-                                               Cras justo odio
+                                               {this.props.vaule + this.props.children}
                                                <a className="right glyphicon glyphicon-edit"
                                                   href="#"></a>
                                                <a href="#"
@@ -36,7 +37,8 @@ const ItemEditor = React.createClass({
                                          render(){
                                              return (
                                                  <li className="list-group-item">
-                                                     <input className="item-edit"/>
+                                                     <input className="item-edit"
+                                                            defaultValue={this.props.value}/>
                                                      <a href="#"
                                                         className="glyphicon glyphicon-share"></a>
                                                      <a href="#"
