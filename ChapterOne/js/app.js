@@ -35,11 +35,18 @@ const List = React.createClass({
 
                                    },
 
-                                   save(id, value){
+                                   _save(id, value){
 
                                        this.state.editList.delete(id);
                                        this.state.list.set(id, value);
                                        this.forceUpdate();
+                                   },
+                                   _edit(id, value){
+
+                                       this.state.list.delete(id);
+                                       this.state.editList.set(id, value);
+                                       this.forceUpdate();
+
                                    },
 
                                    // refresh view
@@ -50,22 +57,23 @@ const List = React.createClass({
                                        for (let entry of this.state.list) {
 
                                            listDOM.push(
-                                                            <Item
-                                                              onRemove={this._removeItem}
-                                                              id={entry[0]}
-                                                              key={entry[0]}
-                                                              value={entry[1]}/>);
+                                               <Item
+                                                   onRemove={this._removeItem}
+                                                   onEdit={this._edit}
+                                                   id={entry[0]}
+                                                   key={entry[0]}
+                                                   value={entry[1]}/>);
 
                                        }
                                        for (let entry of this.state.editList) {
 
                                            editListDOM.push(
                                                <ItemEditor
-                                               onRemove={this._removeItemEditor}
-                                               onSave={this.save}
-                                               id={entry[0]}
-                                               key={entry[0]}
-                                               value={entry[1]}/>);
+                                                   onRemove={this._removeItemEditor}
+                                                   onSave={this._save}
+                                                   id={entry[0]}
+                                                   key={entry[0]}
+                                                   value={entry[1]}/>);
 
                                        }
 
@@ -83,14 +91,21 @@ const List = React.createClass({
 // Item
 
 const Item = React.createClass({
-
+                                   _edit(){
+                                       this.props.onEdit(this.props.id, this.props.value);
+                                   },
+                                   _remove(){
+                                       this.props.onRemove(this.props.id);
+                                   },
                                    render(){
                                        return (
                                            <li className="list-group-item">
                                                {this.props.value}
-                                               <a className="right glyphicon glyphicon-edit"
+                                               <a onClick={this._edit}
+                                                  className="right glyphicon glyphicon-edit"
                                                   href="#"></a>
                                                <a href="#"
+                                                  onClick={this._remove}
                                                   className="right glyphicon glyphicon-remove"></a>
                                            </li>);
                                    }
@@ -102,7 +117,7 @@ const ItemEditor = React.createClass({
 
                                          getInitialState(){
                                              return {
-                                                 value: "",
+                                                 value: this.props.value,
 
                                              }
                                          },

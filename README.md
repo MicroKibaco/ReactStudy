@@ -13,6 +13,7 @@
 - Internal status data and add functionality
 - ItemEditor Removes the function
 - ItemEditor Save the function
+- Edit and Removes the implementation of the Item function
 
 
 
