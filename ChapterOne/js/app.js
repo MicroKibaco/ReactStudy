@@ -15,7 +15,7 @@ const List = React.createClass({
 
                                    _add(){
                                        const key = ++this.state.key;
-                                       this.state.editList.set(key, {value: ''});
+                                       this.state.editList.set(key, '');
                                        this.forceUpdate();
                                    },
 
@@ -35,6 +35,13 @@ const List = React.createClass({
 
                                    },
 
+                                   save(id, value){
+
+                                       this.state.editList.delete(id);
+                                       this.state.list.set(id, value);
+                                       this.forceUpdate();
+                                   },
+
                                    // refresh view
                                    render(){
                                        const listDOM = [];
@@ -42,19 +49,23 @@ const List = React.createClass({
 
                                        for (let entry of this.state.list) {
 
-                                           listDOM.push(<Item id={entry[0]}
-                                                              key={entry[0]}
+                                           listDOM.push(
+                                                            <Item
                                                               onRemove={this._removeItem}
-                                                              value={entry[1].value}/>);
+                                                              id={entry[0]}
+                                                              key={entry[0]}
+                                                              value={entry[1]}/>);
 
                                        }
                                        for (let entry of this.state.editList) {
 
-                                           editListDOM.push(<ItemEditor
+                                           editListDOM.push(
+                                               <ItemEditor
                                                onRemove={this._removeItemEditor}
+                                               onSave={this.save}
                                                id={entry[0]}
                                                key={entry[0]}
-                                               value={entry[1].value}/>);
+                                               value={entry[1]}/>);
 
                                        }
 
@@ -76,7 +87,7 @@ const Item = React.createClass({
                                    render(){
                                        return (
                                            <li className="list-group-item">
-                                               {this.props.vaule + this.props.children}
+                                               {this.props.value}
                                                <a className="right glyphicon glyphicon-edit"
                                                   href="#"></a>
                                                <a href="#"
@@ -91,15 +102,20 @@ const ItemEditor = React.createClass({
 
                                          getInitialState(){
                                              return {
-                                                 value: '',
+                                                 value: "",
 
                                              }
                                          },
 
-                                         remove(){
+                                         _remove(){
                                              this.props.onRemove(this.props.id);
                                          },
+                                         _save(){
+                                             this.props.onSave(this.props.id, this.state.value);
+
+                                         },
                                          _changeHandle(event){
+
                                              this.setState({
                                                                value: event.target.value,
                                                            });
@@ -107,6 +123,7 @@ const ItemEditor = React.createClass({
                                               this.forceUpdate();*/
                                          },
                                          render(){
+
                                              return (
                                                  <li className="list-group-item">
                                                      {this.props.id}
@@ -114,10 +131,11 @@ const ItemEditor = React.createClass({
                                                             onChange={this._changeHandle}
                                                             value={this.state.value}/>
                                                      <a href="#"
-                                                        className="glyphicon glyphicon-share"></a>
+                                                        className="glyphicon glyphicon-share"
+                                                        onClick={this._save}></a>
                                                      <a href="#"
                                                         className="glyphicon glyphicon-remove"
-                                                        onClick={this.remove}></a>
+                                                        onClick={this._remove}></a>
                                                  </li>);
                                          }
                                      });
