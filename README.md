@@ -14,7 +14,7 @@
 - ItemEditor Removes the function
 - ItemEditor Save the function
 - Edit and Removes the implementation of the Item function
-
+- Optimize the first application
 
 ### Renderings
 <img src="./docus/images/chapter-one.gif" width="375px" height="667px" />
