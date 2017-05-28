@@ -11,5 +11,7 @@
 - Divide multiple components
 - By Curing property data
 - Internal status data and add functionality
+- ItemEditor Removes the function
+
 
 
