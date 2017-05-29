@@ -78,13 +78,13 @@ const Item = React.createClass({
 
 function render(bool) {
     ReactDOM.render(<div>
-        <Item/>
         {bool ? <Item/> : ''}
-        <Item/>
-        <Item/>
     </div>, document.getElementById('test'));
 }
 render(true);
 document.getElementById('clear').onclick = function () {
-    render();
+    render(false);
+};
+document.getElementById('new').onclick = function () {
+    render(true);
 };

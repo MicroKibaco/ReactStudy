@@ -31,7 +31,7 @@
 ### [ChapterThree](https://github.com/MicroKibaco/ReactStudy/tree/master/ChapterThree)
 - The principle of component lifecycle
 
-<img src="./docus/images/react-native-life-cycle.png" width = "1000" height = "600" alt="组件的生命周期" align=center ></img>
+<img src="./docus/images/react-native-life-cycle.png" width = "1000" height = "600" alt="ComponentLifecycle" align=center ></img>
 
    Lifecycle  | Status
 -------- | ---
