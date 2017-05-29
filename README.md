@@ -35,9 +35,9 @@
 
    Lifecycle  | Status
 -------- | ---
-init | getdefaultProps,getInitState
-mount    | componentWillMount,componentDidMount[only time to change]
-update     | componentWillUpdate,shouldComponentUpdate,componentWillReceiveProps,componentDidUpdate
+[init](https://github.com/MicroKibaco/ReactStudy/tree/master/ChapterThree/js/app-init.js) | getdefaultProps,getInitState
+[mount](https://github.com/MicroKibaco/ReactStudy/tree/master/ChapterThree/js/app-mount.js)   | componentWillMount,componentDidMount[only time to change]
+[update](https://github.com/MicroKibaco/ReactStudy/tree/master/ChapterThree/js/app-update.js)    | componentWillUpdate,shouldComponentUpdate,componentWillReceiveProps,componentDidUpdate
 unmount     | componentWillUnmount
 
 
