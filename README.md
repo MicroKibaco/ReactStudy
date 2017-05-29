@@ -28,3 +28,16 @@
 - Comment and the Element characteristics
 - Create two kinds of Component
 
+### [ChapterThree](https://github.com/MicroKibaco/ReactStudy/tree/master/ChapterThree)
+- The principle of component lifecycle
+
+<img src="./docus/images/react-native-life-cycle.png" width = "1000" height = "600" alt="组件的生命周期" align=center ></img>
+
+   Lifecycle  | Status
+-------- | ---
+init | getdefaultProps,getInitState
+mount    | componentWillMount,componentDidMount[only time to change]
+update     | componentWillUpdate,shouldComponentUpdate,componentWillReceiveProps,componentDidUpdate
+unmount     | componentWillUnmount
+
+
