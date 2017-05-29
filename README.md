@@ -19,3 +19,11 @@
 ### Renderings
 <img src="./docus/images/chapter-one.gif" width="375px" height="667px" />
 
+### [ChapterTwo](https://github.com/MicroKibaco/ReactStudy/tree/master/ChapterTwo)
+
+- JSX Nature
+- Attribute and inline style
+- Ternary operation and complex judgment
+- The root node's personality
+
+
