@@ -25,5 +25,6 @@
 - Attribute and inline style
 - Ternary operation and complex judgment
 - The root node's personality
-
+- Comment and the Element characteristics
+- Create two kinds of Component
 
