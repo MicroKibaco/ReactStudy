@@ -57,7 +57,7 @@ const Item = React.createClass({
                                    },
                                    shouldComponentUpdate(nextProps, nextState){
                                        console.log('should component update');
-                                       return false;
+                                       return true;
                                    },
                                    componentWillReceiveProps(nextProps){
                                        console.log('component will receive props');

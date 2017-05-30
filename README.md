@@ -1,6 +1,6 @@
 > # Completely conquered ReactJS
 
-### [ChapterOne](https://github.com/MicroKibaco/ReactStudy/tree/master/ChapterOne)
+## [Chapter01:Development Environment Config](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter01)
 - Configure the base runtime environment
     - [React official website](https://facebook.github.io/react/docs/hello-world.html)
     - JSX : html + javaScript ==>Pure javaScript
@@ -16,10 +16,10 @@
 - Edit and Removes the implementation of the Item function
 - Optimize the first application
 
-### Renderings
+## Renderings:Describe Chapter01
 <img src="./docus/images/chapter-one.gif" width="375px" height="667px" />
 
-### [ChapterTwo](https://github.com/MicroKibaco/ReactStudy/tree/master/ChapterTwo)
+## [Chapter02:JSX Intro](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter02)
 
 - JSX Nature
 - Attribute and inline style
@@ -28,16 +28,21 @@
 - Comment and the Element characteristics
 - Create two kinds of Component
 
-### [ChapterThree](https://github.com/MicroKibaco/ReactStudy/tree/master/ChapterThree)
+## [Chapter03:React Commpent Lifecycle](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter03)
 - The principle of component lifecycle
 
-<img src="./docus/images/react-native-life-cycle.png" width = "1000" height = "600" alt="ComponentLifecycle" align=center ></img>
+<img src="./docus/images/react-lifecycle.png" width = "934" height = "982" alt="ComponentLifecycle" align=center ></img>
 
    Lifecycle  | Status
 -------- | ---
-[init](https://github.com/MicroKibaco/ReactStudy/tree/master/ChapterThree/js/app-init.js) | getdefaultProps,getInitState
-[mount](https://github.com/MicroKibaco/ReactStudy/tree/master/ChapterThree/js/app-mount.js)   | componentWillMount,componentDidMount[only time to change]
-[update](https://github.com/MicroKibaco/ReactStudy/tree/master/ChapterThree/js/app-update.js)    | componentWillUpdate,shouldComponentUpdate,componentWillReceiveProps,componentDidUpdate
-[unmount](https://github.com/MicroKibaco/ReactStudy/tree/master/ChapterThree/js/app-unmount.js)      | componentWillUnmount
+[init](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter03/js/app-init.js) | getdefaultProps,getInitState
+[mount](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter03/js/app-mount.js)   | componentWillMount,componentDidMount[only 1 time to change]
+[update](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter03/js/app-update.js)    | componentWillUpdate,shouldComponentUpdate,componentWillReceiveProps,componentDidUpdate
+[unmount](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter03/js/app-unmount.js)      | componentWillUnmount
 
+## Useful links
+- [react-demos](https://github.com/ruanyf/react-demos)
 
+## License
+
+BSD licensed
