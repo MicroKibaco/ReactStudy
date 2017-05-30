@@ -1,5 +1,9 @@
 > # Completely conquered ReactJS
 
+    This is a collection of simple demos of React.js.
+
+    These demos are purposely written in a simple and clear style. You will find no difficulty in following them to learn the project.
+
 ## [Chapter01:Development Environment Config](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter01)
 - Configure the base runtime environment
     - [React official website](https://facebook.github.io/react/docs/hello-world.html)
@@ -16,8 +20,8 @@
 - Edit and Removes the implementation of the Item function
 - Optimize the first application
 
-## Renderings:Describe Chapter01
-<img src="./docus/images/chapter-one.gif" width="375px" height="667px" />
+### Renderings:Describe Chapter01
+<img src="./docus/images/chapter-one.gif" width="250px" height="445px" />
 
 ## [Chapter02:JSX Intro](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter02)
 
@@ -42,7 +46,8 @@
 
 ## Useful links
 - [react-demos](https://github.com/ruanyf/react-demos)
+- [pinggod.com](http://pinggod.com/2015/React-%E7%BB%84%E4%BB%B6%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/)
 
 ## License
 
-BSD licensed
+IISC licensed
