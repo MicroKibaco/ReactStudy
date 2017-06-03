@@ -50,9 +50,9 @@
 
 
 ## [Chapter05:React Commpent Event](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter05)
-- [Keyboard Event](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter05/js/event.js)
-- [Mouse Event](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter05/js/mouse.js)
-- [Custom Event](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter05/js/custom.js)
+- [Keyboard Event](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter05/js/keyBoardEvent.js)
+- [Mouse Event](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter05/js/mouseEvent.js)
+- [Custom Event](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter05/js/customEvent.js)
 
 ## Useful links
 - [react-demos](https://github.com/ruanyf/react-demos)
