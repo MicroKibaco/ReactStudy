@@ -25,8 +25,17 @@ const DND = React.createClass({
                                   },
                                   drop(event){
 
-                                      var vaule = this.rightdata.get(this.state.dragId);
+                                      let vaule = this.state.rightdata.get(this.state.dragId);
                                       this.state.leftdata.set(this.state.dragId, vaule);
+                                      this.state.rightdata.delete(this.state.dragId);
+                                      this.forceUpdate();
+
+                                  },
+                                  drop2(event){
+
+                                      let vaule = this.state.leftdata.get(this.state.dragId);
+                                      this.state.rightdata.set(this.state.dragId, vaule);
+                                      this.state.leftdata.delete(this.state.dragId);
                                       this.forceUpdate();
 
                                   },
@@ -56,7 +65,10 @@ const DND = React.createClass({
                                                onDrop={this.drop}>
                                               {leftList}
                                           </div>
-                                          <div id="rightSection" onDrop={this.drop}>
+                                          <div id="rightSection"
+                                               onDragEnter={e => e.preventDefault()}
+                                               onDragOver={e => e.preventDefault()}
+                                               onDrop={this.drop2}>
                                               {rightList}
                                           </div>
 
@@ -66,4 +78,5 @@ const DND = React.createClass({
 
                               });
 
-ReactDOM.render(<DND data={data}/>, document.body);
+ReactDOM.render(<DND data={data}/>, document.getElementById('one'));
+ReactDOM.render(<DND data={data}/>, document.getElementById('two'));

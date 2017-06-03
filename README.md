@@ -59,7 +59,4 @@
 - [pinggod.com](http://pinggod.com/2015/React-%E7%BB%84%E4%BB%B6%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/)
 
 ## License
-
-
-
-IISC licensed
+IISC licensed   @2017
