@@ -45,14 +45,21 @@
 [unmount](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter03/js/app-unmount.js)      | componentWillUnmount
 
 ## [Chapter04:React Commpent Properties](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter04)
-- Form attribute
-- refs attribute
+- [Form attribute](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter04/js/form.js)
+- [refs attribute](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter04/js/ref.js)
 
+
+## [Chapter05:React Commpent Event](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter05)
+- [Keyboard Event](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter05/js/event.js)
+- [Mouse Event](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter05/js/mouse.js)
+- [Custom Event](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter05/js/custom.js)
 
 ## Useful links
 - [react-demos](https://github.com/ruanyf/react-demos)
 - [pinggod.com](http://pinggod.com/2015/React-%E7%BB%84%E4%BB%B6%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/)
 
 ## License
+
+
 
 IISC licensed
