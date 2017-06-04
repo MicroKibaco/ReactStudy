@@ -1,0 +1,27 @@
+{
+  "name": "eventemitter",
+  "version": "1.0.3",
+  "authors": [
+    "Victor Queiroz <victorcqueirozg@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "main": "build/eventemitter.js",
+  "homepage": "https://github.com/VictorQueiroz/eventemitter",
+  "_release": "1.0.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.3",
+    "commit": "bef891f60e582bce6d1be7bcfcfc4b91e1262154"
+  },
+  "_source": "https://github.com/VictorQueiroz/eventemitter.git",
+  "_target": "^1.0.3",
+  "_originalSource": "eventemitter",
+  "_direct": true
+}

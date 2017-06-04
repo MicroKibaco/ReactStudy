@@ -57,6 +57,7 @@
 ## [Chapter06:Communication Between Components](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter06)
 - [Parent components communicate with Child components](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter06/js/father2Son.js)
 - [Child components communicate with Parent components](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter06/js/son2Father.js)
+- [eventBus](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter06/js/eventBus.js)
 
 
 ## Useful links
@@ -64,4 +65,4 @@
 - [pinggod.com](http://pinggod.com/2015/React-%E7%BB%84%E4%BB%B6%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/)
 
 ## License
-IISC licensed   @2017
+IISC licensed

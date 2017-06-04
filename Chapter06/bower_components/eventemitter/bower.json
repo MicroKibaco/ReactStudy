@@ -1,0 +1,16 @@
+{
+  "name": "eventemitter",
+  "version": "1.0.3",
+  "authors": [
+    "Victor Queiroz <victorcqueirozg@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "main": "build/eventemitter.js"
+}
