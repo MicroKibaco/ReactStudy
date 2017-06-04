@@ -6,7 +6,7 @@ const Father = React.createClass({
 
                                      componentWillMount(){
 
-                                         this.props.bus.on('test event', function () {
+                                         this.props.bus.on('test event', ()=> {
                                              console.log('handle is' + this.props.name);
                                          });
 
