@@ -61,6 +61,7 @@
 - [eventBus two](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter06/js/eventBus2.js)
 
 ## [Chapter07:React Tools](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter07)
+- [transition](https://github.com/MicroKibaco/ReactStudy/tree/master/Chapter07/js/transition.js)
 
 
 ## Useful links
