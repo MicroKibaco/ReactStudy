@@ -11,15 +11,28 @@ const Parent = React.createClass({
 
                                          return {
 
-                                             parent: 'just from parent'
+                                             parent: 'just from parent',
+                                             child: ''
 
                                          };
 
                                      },
 
+                                     getFromChild(value){
+                                         this.setState({
+                                                           child: value
+                                                       });
+                                     },
+
                                      render(){
 
-                                         return (<Child parent={this.state.parent}/>)
+                                         return (
+                                             <div>
+                                                 <p>child:{this.state.child}</p>
+                                                 <Child parent={this.state.parent}
+                                                        getFromChild={this.getFromChild}/>
+                                             </div>
+                                         )
 
                                      }
 
@@ -31,7 +44,11 @@ const Child = React.createClass({
                                     render(){
                                         let parent = this.props.parent;
                                         return (
-                                            <p>{parent}</p>
+                                            <div>
+                                                <p>{parent}</p>
+                                                <button onClick={this.props.getFromChild.bind(null,
+                                                                                              'come from child')}/>
+                                            </div>
                                         );
                                     }
 
