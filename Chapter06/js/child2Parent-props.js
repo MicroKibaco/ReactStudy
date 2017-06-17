@@ -10,10 +10,7 @@ const Parent = React.createClass({
                                      getInitialState(){
 
                                          return {
-
-                                             parent: 'just from parent',
-                                             child: ''
-
+                                             child: 'now I am parent'
                                          };
 
                                      },
@@ -28,9 +25,9 @@ const Parent = React.createClass({
 
                                          return (
                                              <div>
-                                                 <p>child:{this.state.child}</p>
-                                                 <Child parent={this.state.parent}
-                                                        getFromChild={this.getFromChild}/>
+                                                 <p>Parent:{this.state.child}</p>
+                                                 <Child
+                                                     getFromChild={this.getFromChild}/>
                                              </div>
                                          )
 
@@ -42,13 +39,10 @@ const Parent = React.createClass({
 const Child = React.createClass({
 
                                     render(){
-                                        let parent = this.props.parent;
+
                                         return (
-                                            <div>
-                                                <p>{parent}</p>
-                                                <button onClick={this.props.getFromChild.bind(null,
-                                                                                              'come from child')}/>
-                                            </div>
+                                            <button onClick={this.props.getFromChild.bind(null,
+                                                                                          'i come from child')}/>
                                         );
                                     }
 

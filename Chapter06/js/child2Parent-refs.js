@@ -12,7 +12,7 @@ const Parent = React.createClass({
 
                                          return {
 
-                                             child: ''
+                                             child: 'now I am parent'
 
                                          };
 
@@ -45,7 +45,7 @@ const Child = React.createClass({
                                     getInitialState(){
 
                                         return {
-                                            child: 'come from child'
+                                            child: 'i come from child'
                                         }
 
                                     },
